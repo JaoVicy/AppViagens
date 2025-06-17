@@ -49,6 +49,11 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bannerImageView" destination="TDp-vV-bcp" id="c8A-gs-TEX"/>
+                <outlet property="headerView" destination="u4D-dj-fql" id="e08-kQ-aH5"/>
+                <outlet property="tituloLabel" destination="4OY-2N-eAF" id="CaR-xN-JLa"/>
+            </connections>
             <point key="canvasLocation" x="137.40458015267174" y="-4.9295774647887329"/>
         </view>
     </objects>

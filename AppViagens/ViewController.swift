@@ -40,6 +40,8 @@ extension ViewController: UITableViewDelegate {
         
         let headerView = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: self, options: nil)?.first as? HomeTableViewHeader
         
+        headerView?.configuraView()
+        
         return headerView
     }
     

@@ -34,12 +34,38 @@
                     <rect key="frame" x="19" y="167" width="375" height="112"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TDp-vV-bcp">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferias" translatesAutoresizingMaskIntoConstraints="NO" id="TDp-vV-bcp">
                             <rect key="frame" x="200" y="0.0" width="175" height="112"/>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pnz-q6-ziW">
                             <rect key="frame" x="0.0" y="0.0" width="200" height="112"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Ofertas exclusivas somente aqui!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6c-Lg-64k">
+                                    <rect key="frame" x="16" y="64.333333333333343" width="168" height="33.666666666666657"/>
+                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aproveite o verão com:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BP1-N0-UfZ">
+                                    <rect key="frame" x="16" y="8" width="125" height="50"/>
+                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
                             <color key="backgroundColor" systemColor="systemCyanColor"/>
+                            <constraints>
+                                <constraint firstItem="BP1-N0-UfZ" firstAttribute="top" secondItem="Pnz-q6-ziW" secondAttribute="top" constant="8" id="8U3-ud-m4q"/>
+                                <constraint firstItem="BP1-N0-UfZ" firstAttribute="leading" secondItem="Pnz-q6-ziW" secondAttribute="leading" constant="16" id="NI4-hA-HAF"/>
+                                <constraint firstAttribute="bottom" secondItem="s6c-Lg-64k" secondAttribute="bottom" constant="14" id="O01-N0-Pe4"/>
+                                <constraint firstAttribute="trailing" secondItem="BP1-N0-UfZ" secondAttribute="trailing" constant="59" id="Qs8-nl-AXo"/>
+                                <constraint firstItem="BP1-N0-UfZ" firstAttribute="top" secondItem="Pnz-q6-ziW" secondAttribute="top" constant="14" id="Tcg-RT-kYo"/>
+                                <constraint firstAttribute="trailing" secondItem="s6c-Lg-64k" secondAttribute="trailing" constant="16" id="X7J-A0-PEZ"/>
+                                <constraint firstItem="s6c-Lg-64k" firstAttribute="top" secondItem="BP1-N0-UfZ" secondAttribute="bottom" constant="8" symbolic="YES" id="e6t-ta-cfH"/>
+                                <constraint firstAttribute="trailing" secondItem="BP1-N0-UfZ" secondAttribute="trailing" constant="16" id="h38-7s-sAW"/>
+                                <constraint firstItem="s6c-Lg-64k" firstAttribute="leading" secondItem="Pnz-q6-ziW" secondAttribute="leading" constant="16" id="rZG-bl-Rsr"/>
+                                <constraint firstItem="BP1-N0-UfZ" firstAttribute="leading" secondItem="Pnz-q6-ziW" secondAttribute="leading" constant="16" id="tm7-TY-snR"/>
+                            </constraints>
                         </view>
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="SRI-GW-R2f"/>
@@ -73,6 +99,7 @@
         </view>
     </objects>
     <resources>
+        <image name="ferias" width="988" height="1364"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

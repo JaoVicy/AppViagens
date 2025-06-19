@@ -34,18 +34,26 @@
                     <rect key="frame" x="19" y="167" width="375" height="112"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDp-vV-bcp">
-                            <rect key="frame" x="205" y="-2" width="170" height="114"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TDp-vV-bcp">
+                            <rect key="frame" x="200" y="0.0" width="175" height="112"/>
                         </imageView>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pnz-q6-ziW">
-                            <rect key="frame" x="0.0" y="0.0" width="208" height="112"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pnz-q6-ziW">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="112"/>
                             <color key="backgroundColor" systemColor="systemCyanColor"/>
                         </view>
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="SRI-GW-R2f"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="TDp-vV-bcp" firstAttribute="top" secondItem="uDt-TV-EkW" secondAttribute="top" id="08B-PQ-ncV"/>
+                        <constraint firstAttribute="bottom" secondItem="Pnz-q6-ziW" secondAttribute="bottom" id="3Wa-bX-QYE"/>
+                        <constraint firstItem="Pnz-q6-ziW" firstAttribute="top" secondItem="SRI-GW-R2f" secondAttribute="top" id="BQZ-0V-VjJ"/>
+                        <constraint firstAttribute="bottom" secondItem="TDp-vV-bcp" secondAttribute="bottom" id="VBV-Fs-bEG"/>
+                        <constraint firstItem="TDp-vV-bcp" firstAttribute="width" secondItem="uDt-TV-EkW" secondAttribute="width" multiplier="0.466667" id="XgP-9h-fcJ"/>
+                        <constraint firstItem="Pnz-q6-ziW" firstAttribute="width" secondItem="uDt-TV-EkW" secondAttribute="width" multiplier="0.533333" id="crt-53-lfj"/>
+                        <constraint firstItem="TDp-vV-bcp" firstAttribute="trailing" secondItem="SRI-GW-R2f" secondAttribute="trailing" id="iY7-xZ-pAt"/>
+                        <constraint firstItem="Pnz-q6-ziW" firstAttribute="leading" secondItem="SRI-GW-R2f" secondAttribute="leading" id="ngG-i6-k2P"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

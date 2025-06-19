@@ -92,6 +92,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bannerImageView" destination="TDp-vV-bcp" id="c8A-gs-TEX"/>
+                <outlet property="bannerView" destination="uDt-TV-EkW" id="qHH-Hm-R7C"/>
                 <outlet property="headerView" destination="u4D-dj-fql" id="e08-kQ-aH5"/>
                 <outlet property="tituloLabel" destination="4OY-2N-eAF" id="CaR-xN-JLa"/>
             </connections>

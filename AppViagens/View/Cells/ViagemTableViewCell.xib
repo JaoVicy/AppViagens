@@ -111,6 +111,16 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundViewCell" destination="FIB-9z-DSg" id="sho-vs-0fw"/>
+                <outlet property="diariaViagemLabel" destination="Ph7-Xb-rSw" id="jnZ-9r-uD5"/>
+                <outlet property="precoSemDescontoLabel" destination="rJn-hd-ICK" id="Z2T-ih-Zlf"/>
+                <outlet property="precoViagemLabel" destination="jPV-nE-sW9" id="ZgN-PP-2kF"/>
+                <outlet property="statusCancelamentoViagemLabel" destination="IdL-2i-fhl" id="yBe-Zr-eA2"/>
+                <outlet property="subtituloViagemLabel" destination="l7v-zF-4XJ" id="iOo-6y-CGu"/>
+                <outlet property="tituloViagemLabel" destination="h4j-cy-tmn" id="ff5-qc-Hex"/>
+                <outlet property="viagemImage" destination="Qkb-Pz-pkM" id="7SM-nR-8Ua"/>
+            </connections>
             <point key="canvasLocation" x="172.51908396946564" y="-10.563380281690142"/>
         </tableViewCell>
     </objects>
@@ -120,10 +130,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

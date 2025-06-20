@@ -40,6 +40,9 @@ class ViagemTableViewCell: UITableViewCell {
         
         precoSemDescontoLabel.text = "R$ \(viagem?.precoSemDesconto ?? 0.00)"
         
-        
+        // MARK: - Adiciona sombra por meio de Extensions/UIView+Extension.swift
+        DispatchQueue.main.async {
+            self.backgroundViewCell.addSombra()
+        }
     }
 }

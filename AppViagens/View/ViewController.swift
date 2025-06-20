@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 // MARK: Extenções da ViewController:
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return sessaoDeViagens?[section].numeroDeLinhas ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -38,8 +38,19 @@ extension ViewController: UITableViewDataSource {
         guard let celulaViagem = tableView.dequeueReusableCell(withIdentifier: "ViagemTableViewCell") as? ViagemTableViewCell else {
             fatalError("error to create ViagemTableViewCell")
         }
+        let viewModel = sessaoDeViagens?[indexPath.section]
         
-        return celulaViagem
+        switch viewModel?.tipo {
+        case .destaques:
+            celulaViagem.configuraCelula(viewModel?.viagens[indexPath.row])
+            return celulaViagem
+        default:
+            return UITableViewCell()
+        }
+            
+        
+        
+        
     }
 }
 
